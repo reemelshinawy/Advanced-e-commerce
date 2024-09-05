@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: #ff6e7f;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #bfe9ff, #ff6e7f);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#root {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-sec {
+    flex: 1;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 5px solid #111;
+    width: 70px;
+    height: 70px;
+    animation: loader 1s ease-in-out infinite forwards;
+    border-radius: 50%;
+    border-top-color: transparent;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes loader {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.page-title {
+    text-align: center;
+    margin: 45px 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+form {
+    margin: auto;
+}
+
+input,
+form button {
+    padding: 10px 20px;
+    background-color: transparent;
+    margin-bottom: 15px;
+    outline: none;
+    border: 1px solid #111;
+    width: 100%;
+}
+
+.error-message {
+    font-size: 10px;
+    color: red;
+    margin-bottom: 15px;
+}
+
+form button {
+    cursor: pointer;
+    background-color: #eee;
+}

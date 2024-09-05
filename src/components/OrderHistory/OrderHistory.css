@@ -1,0 +1,51 @@
+ul {
+    list-style: none;
+}
+
+.orders-records {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.orders-records li {
+    display: flex;
+}
+
+.order-record {
+    border: 1px solid #111;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.order-record .date {
+    opacity: 0.6;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+ul.orders {
+    margin: 25px 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 20px 0;
+}
+
+ul.orders li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #eee;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.record-details .total {
+    font-weight: bold;
+    font-size: 24px;
+}

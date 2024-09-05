@@ -1,0 +1,58 @@
+.dashboard-form {
+    width: 50%;
+}
+
+ul.dash-prods {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    gap: 15px;
+    list-style: none;
+}
+
+ul.dash-prods li {
+    padding: 25px;
+    border: 1px solid #111;
+    width: calc(25% - 11.25px);
+    height: auto;
+}
+
+.dash-prod-btns {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.dash-prod-btns button {
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 16px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+ul.dash-prods li button.edi {
+    background-color: dodgerblue;
+}
+
+ul.dash-prods li button.edi:hover {
+    border-color: aqua;
+}
+
+ul.dash-prods li button.del {
+    background-color: red;
+}
+
+ul.dash-prods li button.del:hover {
+    border-color: brown;
+}

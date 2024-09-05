@@ -1,0 +1,23 @@
+@media (width < 992px) {
+    ul.dash-prods {
+        width: 85% !important;
+    }
+
+    ul.dash-prods li {
+        width: calc((100% / 3) - 10px) !important;
+    }
+}
+
+@media (width < 768px) {
+    .dashboard-form {
+        width: 80% !important;
+    }
+
+    ul.dash-prods {
+        width: 85% !important;
+    }
+
+    ul.dash-prods li {
+        width: 100% !important;
+    }
+}
